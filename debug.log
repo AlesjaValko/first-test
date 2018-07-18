@@ -1,0 +1,3 @@
+[0718/224404.495:ERROR:file_io_win.cc(161)] CreateFile C:\Users\9575~1\AppData\Local\Temp\scoped_dir8412_23835\Crashpad\settings.dat: Системе не удается найти указанный путь. (0x3)
+[0718/224404.495:ERROR:file_io_win.cc(170)] CreateFile C:\Users\9575~1\AppData\Local\Temp\scoped_dir8412_23835\Crashpad\reports\211f784c-2710-48b3-8116-027a06bbc5f2.dmp: Системе не удается найти указанный путь. (0x3)
+[0718/224404.495:ERROR:crash_report_exception_handler.cc(97)] PrepareNewCrashReport failed
