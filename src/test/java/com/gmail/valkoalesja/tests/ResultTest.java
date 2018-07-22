@@ -5,7 +5,6 @@ import com.gmail.valkoalesja.pages.ResultPage;
 import com.gmail.valkoalesja.pages.SearchPage;
 import org.junit.Assert;
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
 
 public class ResultTest extends TestBase {
 
@@ -21,6 +20,7 @@ public class ResultTest extends TestBase {
 
     @Test
     public void search() {
+        this.driver.get("https://www.yandex.ru/");
 
         SearchPage searchPage = new SearchPage(this.driver);
         ResultPage resultPage = new ResultPage(this.driver);
