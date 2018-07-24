@@ -4,8 +4,11 @@ import com.gmail.valkoalesja.bases.PageBase;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.By;
 
 public class LocPage extends PageBase {
 
@@ -21,20 +24,22 @@ public class LocPage extends PageBase {
     private WebElement Form;
 
     private void pressEnterWithDelay() {
-        try {
-            Thread.sleep(1000);
+        WebDriverWait wait = new WebDriverWait(this.driver, 3);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("popup_visibility_visible")));
 
-            LocLine.sendKeys(Keys.RETURN);
-        } catch(InterruptedException e){
-            e.printStackTrace();
-        }
+        LocLine.sendKeys(Keys.RETURN);
     }
 
-    public void inputLocation(String text) {
+    public void clearInput() {
         LocLine.clear();
-        LocLine.sendKeys(text);
+    }
 
+    public void submitForm() {
         this.pressEnterWithDelay();
+    }
+
+    public void setLocationToInput(String text) {
+        LocLine.sendKeys(text);
     }
 
 }
