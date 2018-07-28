@@ -4,13 +4,6 @@
     <list default="true" id="f9bfa9ff-1a94-4722-a5fb-f88d855ae6c9" name="Default" comment="refactoring to base classes">
       <change beforePath="$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/pages/MarketPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/pages/MarketPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/tests/MarketTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/tests/MarketTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/gmail/valkoalesja/pages/MapPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/gmail/valkoalesja/pages/MarketPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/gmail/valkoalesja/pages/MusicPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/gmail/valkoalesja/pages/NewsPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/gmail/valkoalesja/pages/PicturePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/gmail/valkoalesja/pages/TranslatePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/gmail/valkoalesja/pages/VideoPage.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,24 +37,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MarketPage.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MarketPage.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/pages/MarketPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="282">
-              <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+            <state relative-caret-position="172">
+              <caret line="105" column="56" selection-start-line="105" selection-start-column="56" selection-end-line="105" selection-end-column="56" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1518#1519#0" expanded="true" />
-                <element signature="e#1546#1547#0" expanded="true" />
+                <element signature="e#1898#1899#0" expanded="true" />
+                <element signature="e#1937#1938#0" expanded="true" />
+                <element signature="e#2163#2164#0" expanded="true" />
+                <element signature="e#2200#2201#0" expanded="true" />
+                <element signature="e#1971#1983#0" expanded="true" />
                 <element signature="e#2016#2025#0" expanded="true" />
-                <element signature="e#2186#2187#0" expanded="true" />
-                <element signature="e#2231#2232#0" expanded="true" />
-                <element signature="e#1695#1696#0" expanded="true" />
-                <element signature="e#1731#1732#0" expanded="true" />
-                <element signature="e#1757#1758#0" expanded="true" />
-                <element signature="e#1784#1785#0" expanded="true" />
-                <element signature="e#1824#1825#0" expanded="true" />
-                <element signature="e#1860#1861#0" expanded="true" />
+                <element signature="e#4550#4551#0" expanded="true" />
+                <element signature="e#4600#4601#0" expanded="true" />
+                <element signature="e#4636#4637#0" expanded="true" />
+                <element signature="e#4681#4682#0" expanded="true" />
+                <element signature="e#4716#4717#0" expanded="true" />
+                <element signature="e#4752#4753#0" expanded="true" />
+                <element signature="e#4780#4781#0" expanded="true" />
+                <element signature="e#4816#4817#0" expanded="true" />
+                <element signature="e#4844#4845#0" expanded="true" />
+                <element signature="e#4880#4881#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,7 +68,7 @@
       <file leaf-file-name="ResultPage.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/pages/ResultPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
+            <state relative-caret-position="87">
               <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -79,11 +77,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MarketTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MarketTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/tests/MarketTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-92">
-              <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
+            <state relative-caret-position="131">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NavigTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/tests/NavigTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,8 +143,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/pages/VideoPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/pages/SearchPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/tests/NavigTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/pages/MarketPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/tests/MarketTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/pages/MarketPage.java" />
       </list>
     </option>
   </component>
@@ -236,7 +246,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Android JUnit.MarketTests.sorting">
-    <configuration name="LocTest.Set" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MarketTests.compare" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="secondproject" />
       <extension name="coverage">
         <pattern>
@@ -247,8 +257,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="com.gmail.valkoalesja.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.gmail.valkoalesja.tests.LocTest" />
-      <option name="METHOD_NAME" value="Set" />
+      <option name="MAIN_CLASS_NAME" value="com.gmail.valkoalesja.tests.MarketTests" />
+      <option name="METHOD_NAME" value="compare" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -305,29 +315,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ResultTest.search" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
-      <module name="secondproject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.gmail.valkoalesja.tests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.gmail.valkoalesja.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.gmail.valkoalesja.tests.ResultTest" />
-      <option name="METHOD_NAME" value="search" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -345,6 +332,29 @@
       <option name="MAIN_CLASS_NAME" value="com.gmail.valkoalesja.tests.MarketTests" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="MarketTests.CountResults" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="secondproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gmail.valkoalesja.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.gmail.valkoalesja.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.gmail.valkoalesja.tests.MarketTests" />
+      <option name="METHOD_NAME" value="CountResults" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -416,19 +426,19 @@
     </configuration>
     <list>
       <item itemvalue="Maven.Unnamed" />
-      <item itemvalue="Android JUnit.ResultTest.search" />
-      <item itemvalue="Android JUnit.LocTest.Set" />
       <item itemvalue="JUnit.MarketTests" />
       <item itemvalue="Android JUnit.NavigTest" />
       <item itemvalue="Android JUnit.MarketTests.sorting" />
+      <item itemvalue="Android JUnit.MarketTests.compare" />
+      <item itemvalue="JUnit.MarketTests.CountResults" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Android JUnit.MarketTests.sorting" />
+        <item itemvalue="JUnit.MarketTests.CountResults" />
         <item itemvalue="JUnit.MarketTests" />
+        <item itemvalue="Android JUnit.MarketTests.compare" />
         <item itemvalue="Android JUnit.NavigTest" />
-        <item itemvalue="Android JUnit.LocTest.Set" />
-        <item itemvalue="Android JUnit.ResultTest.search" />
       </list>
     </recent_temporary>
   </component>
@@ -446,34 +456,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MarketTests_sorting - 2018.07.28 at 21h 28m 06s.xml">
-      <configuration name="MarketTests.sorting" configurationId="AndroidJUnit" />
+    <history-entry file="MarketTests_compare - 2018.07.29 at 00h 03m 52s.xml">
+      <configuration name="MarketTests.compare" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="MarketTests_sorting - 2018.07.28 at 21h 29m 31s.xml">
-      <configuration name="MarketTests.sorting" configurationId="AndroidJUnit" />
+    <history-entry file="MarketTests_compare - 2018.07.29 at 00h 08m 13s.xml">
+      <configuration name="MarketTests.compare" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="MarketTests_sorting - 2018.07.28 at 21h 30m 50s.xml">
-      <configuration name="MarketTests.sorting" configurationId="AndroidJUnit" />
+    <history-entry file="MarketTests_compare - 2018.07.29 at 00h 09m 49s.xml">
+      <configuration name="MarketTests.compare" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="MarketTests_sorting - 2018.07.28 at 21h 32m 32s.xml">
-      <configuration name="MarketTests.sorting" configurationId="AndroidJUnit" />
+    <history-entry file="MarketTests - 2018.07.29 at 00h 11m 21s.xml">
+      <configuration name="MarketTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarketTests_sorting - 2018.07.28 at 21h 34m 43s.xml">
-      <configuration name="MarketTests.sorting" configurationId="AndroidJUnit" />
+    <history-entry file="MarketTests_compare - 2018.07.29 at 00h 13m 03s.xml">
+      <configuration name="MarketTests.compare" configurationId="AndroidJUnit" />
     </history-entry>
-    <history-entry file="MarketTests_sorting - 2018.07.28 at 21h 36m 00s.xml">
-      <configuration name="MarketTests.sorting" configurationId="AndroidJUnit" />
+    <history-entry file="MarketTests - 2018.07.29 at 00h 14m 40s.xml">
+      <configuration name="MarketTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarketTests_sorting - 2018.07.28 at 21h 36m 57s.xml">
-      <configuration name="MarketTests.sorting" configurationId="AndroidJUnit" />
+    <history-entry file="MarketTests_CountResults - 2018.07.29 at 00h 20m 30s.xml">
+      <configuration name="MarketTests.CountResults" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarketTests_sorting - 2018.07.28 at 21h 37m 39s.xml">
-      <configuration name="MarketTests.sorting" configurationId="AndroidJUnit" />
+    <history-entry file="MarketTests_CountResults - 2018.07.29 at 00h 22m 09s.xml">
+      <configuration name="MarketTests.CountResults" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarketTests_sorting - 2018.07.28 at 21h 38m 33s.xml">
-      <configuration name="MarketTests.sorting" configurationId="AndroidJUnit" />
+    <history-entry file="MarketTests_CountResults - 2018.07.29 at 00h 23m 42s.xml">
+      <configuration name="MarketTests.CountResults" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MarketTests_sorting - 2018.07.28 at 21h 45m 44s.xml">
+    <history-entry file="MarketTests_sorting - 2018.07.29 at 00h 25m 29s.xml">
       <configuration name="MarketTests.sorting" configurationId="AndroidJUnit" />
     </history-entry>
   </component>
@@ -490,7 +500,7 @@
       <window_info anchor="bottom" id="Event Log" order="1" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Version Control" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.44833067" />
+      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.29888713" />
       <window_info anchor="bottom" id="Terminal" order="2" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="0" />
@@ -519,17 +529,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/pages/SearchPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1732#1744#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/tests/NavigTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -608,17 +607,22 @@
           <caret line="20" column="52" selection-start-line="20" selection-start-column="52" selection-end-line="20" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1518#1519#0" expanded="true" />
-            <element signature="e#1546#1547#0" expanded="true" />
+            <element signature="e#1898#1899#0" expanded="true" />
+            <element signature="e#1937#1938#0" expanded="true" />
+            <element signature="e#2163#2164#0" expanded="true" />
+            <element signature="e#2200#2201#0" expanded="true" />
+            <element signature="e#1971#1983#0" expanded="true" />
             <element signature="e#2016#2025#0" expanded="true" />
-            <element signature="e#2186#2187#0" expanded="true" />
-            <element signature="e#2231#2232#0" expanded="true" />
-            <element signature="e#1695#1696#0" expanded="true" />
-            <element signature="e#1731#1732#0" expanded="true" />
-            <element signature="e#1757#1758#0" expanded="true" />
-            <element signature="e#1784#1785#0" expanded="true" />
-            <element signature="e#1824#1825#0" expanded="true" />
-            <element signature="e#1860#1861#0" expanded="true" />
+            <element signature="e#4550#4551#0" expanded="true" />
+            <element signature="e#4600#4601#0" expanded="true" />
+            <element signature="e#4636#4637#0" expanded="true" />
+            <element signature="e#4681#4682#0" expanded="true" />
+            <element signature="e#4716#4717#0" expanded="true" />
+            <element signature="e#4752#4753#0" expanded="true" />
+            <element signature="e#4780#4781#0" expanded="true" />
+            <element signature="e#4816#4817#0" expanded="true" />
+            <element signature="e#4844#4845#0" expanded="true" />
+            <element signature="e#4880#4881#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -875,16 +879,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/pages/VideoPage.java___jb_tmp___" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/tests/NavigTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
@@ -910,16 +904,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/pages/ResultPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/lang/Integer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="99">
@@ -927,33 +911,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/pages/MarketPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/tests/NavigTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="58" column="24" selection-start-line="58" selection-start-column="24" selection-end-line="58" selection-end-column="24" />
+        <state relative-caret-position="119">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1518#1519#0" expanded="true" />
-            <element signature="e#1546#1547#0" expanded="true" />
-            <element signature="e#2016#2025#0" expanded="true" />
-            <element signature="e#2186#2187#0" expanded="true" />
-            <element signature="e#2231#2232#0" expanded="true" />
-            <element signature="e#1695#1696#0" expanded="true" />
-            <element signature="e#1731#1732#0" expanded="true" />
-            <element signature="e#1757#1758#0" expanded="true" />
-            <element signature="e#1784#1785#0" expanded="true" />
-            <element signature="e#1824#1825#0" expanded="true" />
-            <element signature="e#1860#1861#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/2.53.0/selenium-support-2.53.0.jar!/org/openqa/selenium/support/ui/ExpectedConditions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="61" column="99" selection-start-line="61" selection-start-column="99" selection-end-line="61" selection-end-column="99" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/pages/ResultPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="87">
+          <caret line="10" column="48" lean-forward="true" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/tests/MarketTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
-          <caret line="59" column="36" selection-start-line="59" selection-start-column="36" selection-end-line="59" selection-end-column="36" />
+        <state relative-caret-position="131">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/gmail/valkoalesja/pages/MarketPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="105" column="56" selection-start-line="105" selection-start-column="56" selection-end-line="105" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1898#1899#0" expanded="true" />
+            <element signature="e#1937#1938#0" expanded="true" />
+            <element signature="e#2163#2164#0" expanded="true" />
+            <element signature="e#2200#2201#0" expanded="true" />
+            <element signature="e#1971#1983#0" expanded="true" />
+            <element signature="e#2016#2025#0" expanded="true" />
+            <element signature="e#4550#4551#0" expanded="true" />
+            <element signature="e#4600#4601#0" expanded="true" />
+            <element signature="e#4636#4637#0" expanded="true" />
+            <element signature="e#4681#4682#0" expanded="true" />
+            <element signature="e#4716#4717#0" expanded="true" />
+            <element signature="e#4752#4753#0" expanded="true" />
+            <element signature="e#4780#4781#0" expanded="true" />
+            <element signature="e#4816#4817#0" expanded="true" />
+            <element signature="e#4844#4845#0" expanded="true" />
+            <element signature="e#4880#4881#0" expanded="true" />
           </folding>
         </state>
       </provider>

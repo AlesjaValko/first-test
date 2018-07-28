@@ -40,6 +40,33 @@ public class MarketPage extends PageBase {
     @FindBy(xpath = ".//a[contains(text(), 'по цене')]")
     private WebElement SortPriceLink;
 
+    @FindBy(css = ".header2-menu__item_type_compare")
+    private WebElement CompareLink;
+
+    @FindBy(css = ".n-compare-toolbar__action-clear")
+    private WebElement ClearCompareBtn;
+
+    public boolean isEmptyCompare() {
+        waitClickableElement(driver.findElement(By.className("n-compare-empty__content")));
+        try {
+            driver.findElement(By.className("n-compare-empty__content"));
+            return true;
+        }
+        catch (org.openqa.selenium.StaleElementReferenceException ex) {
+            return false;
+        }
+    }
+
+    public void removeItemsFromCompare() {
+        ClearCompareBtn.click();
+    }
+
+    public int countItemsInCompare() {
+        List<WebElement> itemsInCompare = driver.findElements(By.className("n-compare-cell_js_inited"));
+
+        return itemsInCompare.size();
+    }
+
     public void clickSortPrice() {
         SortPriceLink.click();
     }
@@ -50,11 +77,28 @@ public class MarketPage extends PageBase {
     }
 
     public void waitResults() {
-        WebDriverWait wait = new WebDriverWait(this.driver, 30);
+        WebDriverWait wait = new WebDriverWait(this.driver, 5);
         wait.until(ExpectedConditions.presenceOfElementLocated (By.className("n-snippet-card2")));
     }
 
     By PRICE_LOCATOR = By.cssSelector("a > div.price");
+
+    public void addFirstTwoResultsToCompare() {
+        ArrayList<WebElement> firstTwoResults = new ArrayList<WebElement>();
+
+        int index = 0;
+        for(WebElement result: driver.findElements(By.className("n-snippet-card2"))) {
+            index++;
+            if(index <= 2) {
+                firstTwoResults.add(result);
+            }
+        }
+
+        for(WebElement result: firstTwoResults) {
+            WebElement btnForCompare = result.findElement(By.cssSelector(".n-product-toolbar__item.n-user-lists_type_compare"));
+            actions.moveToElement(result).moveToElement(btnForCompare).click().build().perform();
+        }
+    }
 
     public List<Integer> getListPrices() {
         waitResults();
@@ -76,15 +120,6 @@ public class MarketPage extends PageBase {
         }
 
         return prices;
-
-//        List<WebElement> priceElements = driver.findElements(PRICE_LOCATOR);
-//        List<String> prices = new ArrayList<String>();
-//
-//        for(int i=0; i<priceElements.size(); i++){
-//            prices.add(priceElements.get(i).getText());
-//        }
-//
-//        return new String[prices.size()];
     }
 
     public Integer countResults() {
@@ -100,9 +135,18 @@ public class MarketPage extends PageBase {
         actions.perform();
     }
 
-    public void waitSelectButton() {
+    public void waitClickableElement(WebElement webElement) {
         WebDriverWait wait = new WebDriverWait(this.driver, 30);
-        wait.until(ExpectedConditions.elementToBeClickable(By.className("select__button")));
+        wait.until(ExpectedConditions.elementToBeClickable(webElement));
+    }
+
+    public void waitClickableElements(By webElements) {
+        WebDriverWait wait = new WebDriverWait(this.driver, 30);
+        wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy((webElements)));
+    }
+
+    public void waitSelectButton() {
+        waitClickableElement(SelectButton);
     }
 
     public void scrollToSelect() {
@@ -119,5 +163,11 @@ public class MarketPage extends PageBase {
 
     public void show48() {
         Show48Option.click();
+    }
+
+    public void clickToCompareLink() {
+        waitClickableElement(CompareLink);
+
+        CompareLink.click();
     }
 }

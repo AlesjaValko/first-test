@@ -13,7 +13,7 @@ public class MarketTests extends TestBase {
     private MarketPage marketPage = new MarketPage(this.driver);
 
     @Test
-    public void CountResults() throws InterruptedException {
+    public void CountResults() {
         this.driver.get("https://www.yandex.ru/");
 
         searchPage.clickMarketLink();
@@ -42,11 +42,11 @@ public class MarketTests extends TestBase {
 
     @Test
     public void sorting() {
-        this.driver.get("https://market.yandex.ru/catalog/54545/");
+        this.driver.get("https://www.yandex.ru/");
 
-//        searchPage.clickMarketLink();
-//
-//        marketPage.goToTablets();
+        searchPage.clickMarketLink();
+
+        marketPage.goToTablets();
 
         marketPage.clickSortPrice();
 
@@ -72,5 +72,24 @@ public class MarketTests extends TestBase {
         }
 
         return isSortedAsc || isSortedDesc;
+    }
+
+    @Test
+    public void compare() {
+        this.driver.get("https://www.yandex.ru/");
+
+        searchPage.clickMarketLink();
+
+        marketPage.goToTablets();
+
+        marketPage.addFirstTwoResultsToCompare();
+
+        marketPage.clickToCompareLink();
+
+        int countItemsInCompare = marketPage.countItemsInCompare();
+        Assert.assertEquals(2, countItemsInCompare);
+
+        marketPage.removeItemsFromCompare();
+        Assert.assertEquals(true, marketPage.isEmptyCompare());
     }
 }
