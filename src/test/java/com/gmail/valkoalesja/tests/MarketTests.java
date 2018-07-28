@@ -6,16 +6,71 @@ import com.gmail.valkoalesja.pages.SearchPage;
 import org.junit.Test;
 import org.junit.Assert;
 
+import java.util.List;
+
 public class MarketTests extends TestBase {
     private SearchPage searchPage = new SearchPage(this.driver);
     private MarketPage marketPage = new MarketPage(this.driver);
 
     @Test
-    public void CountResults    () {
+    public void CountResults() throws InterruptedException {
         this.driver.get("https://www.yandex.ru/");
 
         searchPage.clickMarketLink();
 
         marketPage.goToTablets();
+
+        Integer countResults;
+
+        marketPage.scrollToSelect();
+        marketPage.clickToSelect();
+        marketPage.show12();
+
+        countResults = marketPage.countResults();
+        Assert.assertTrue("Counts != 12", countResults == 12);
+
+        marketPage.waitSelectButton();
+
+        marketPage.scrollToSelect();
+        marketPage.clickToSelect();
+        marketPage.show48();
+
+        countResults = marketPage.countResults();
+        Assert.assertTrue("Counts != 48", countResults == 48);
+
+    }
+
+    @Test
+    public void sorting() {
+        this.driver.get("https://market.yandex.ru/catalog/54545/");
+
+//        searchPage.clickMarketLink();
+//
+//        marketPage.goToTablets();
+
+        marketPage.clickSortPrice();
+
+        driver.navigate().refresh();
+
+        Assert.assertTrue(isSorted(marketPage.getListPrices()));
+    }
+
+    public boolean isSorted(List<Integer> prices) {
+        Boolean isSortedAsc = true;
+        Boolean isSortedDesc = true;
+
+        for(int i=1; i < prices.size() -1; i++){
+            if(prices.get(i-1) > prices.get(i)){
+                isSortedDesc = false;
+            }
+        }
+
+        for(int i=1; i < prices.size()-1; i++){
+            if(prices.get(i-1) < prices.get(i)){
+                isSortedAsc = false;
+            }
+        }
+
+        return isSortedAsc || isSortedDesc;
     }
 }
