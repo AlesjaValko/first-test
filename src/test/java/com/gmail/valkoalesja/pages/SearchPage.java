@@ -10,8 +10,6 @@ import org.openqa.selenium.support.PageFactory;
 import java.util.ArrayList;
 import java.util.List;
 
-import java.lang.reflect.Array;
-
 public class SearchPage extends PageBase {
 
     public SearchPage(WebDriver currentDriver) {
@@ -36,6 +34,45 @@ public class SearchPage extends PageBase {
 
     @FindBy(css=".home-tabs__more-item")
     private WebElement MoreItems;
+
+    @FindBy(css="a[data-id=\"market\"]")
+    private WebElement MarketLink;
+
+    //home tabs
+    @FindBy(css="a[data-id=\"maps\"]")
+    private WebElement HomeTabMaps;
+
+    @FindBy(css="a[data-id=\"market\"]")
+    private WebElement HomeTabMarket;
+
+    @FindBy(css="a[data-id=\"video\"]")
+    private WebElement HomeTabVideo;
+
+    @FindBy(css="a[data-id=\"images\"]")
+    private WebElement HomeTabImages;
+
+    @FindBy(css="a[data-id=\"news\"]")
+    private WebElement HomeTabNews;
+
+    @FindBy(css="a[data-id=\"translate\"]")
+    private WebElement HomeTabTranslate;
+
+    @FindBy(css="a[data-id=\"music\"]")
+    private WebElement HomeTabMusic;
+
+    public ArrayList<WebElement> homeTabs() {
+        ArrayList<WebElement> tabs = new ArrayList<WebElement>();
+
+        tabs.add(HomeTabMaps);
+        tabs.add(HomeTabMarket);
+        tabs.add(HomeTabVideo);
+        tabs.add(HomeTabImages);
+        tabs.add(HomeTabNews);
+        tabs.add(HomeTabTranslate);
+        tabs.add(HomeTabMusic);
+
+        return tabs;
+    }
 
     public String moreItemsString() {
         System.out.println(this.moreItemsArray());
@@ -64,5 +101,7 @@ public class SearchPage extends PageBase {
     public void clickLocButton() { LocButton.click(); }
 
     public void clickMoreButton() { MoreButton.click();}
+
+    public void clickMarketLink() { MarketLink.click(); }
 
 }

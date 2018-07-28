@@ -33,4 +33,5 @@ public class ResultTest extends TestBase {
 
         Assert.assertEquals(anyOneWordContains(results, expectedString), true);
     }
+    
 }
