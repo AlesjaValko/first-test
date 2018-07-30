@@ -90,6 +90,16 @@ public class SearchPage extends PageBase {
         return new String[allElementsText.size()];
     }
 
+    public boolean anyOneWordContains(String sourceString, String targetString) {
+        for (String word : targetString.split(" ")) {
+            if(sourceString.toLowerCase().contains(word.toLowerCase())) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     public void inputSearch(String text) {
         SearchLine.sendKeys(text);
     }

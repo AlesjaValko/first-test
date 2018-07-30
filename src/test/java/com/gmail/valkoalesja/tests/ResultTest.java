@@ -8,16 +8,6 @@ import org.junit.Test;
 
 public class ResultTest extends TestBase {
 
-    public boolean anyOneWordContains(String sourceString, String targetString) {
-        for (String word : targetString.split(" ")) {
-            if(sourceString.toLowerCase().contains(word.toLowerCase())) {
-                return true;
-            }
-        }
-
-        return false;
-    }
-
     @Test
     public void search() {
         this.driver.get("https://www.yandex.ru/");
@@ -31,7 +21,7 @@ public class ResultTest extends TestBase {
         String expectedString = "погода пенза";
         String results = resultPage.Textget();
 
-        Assert.assertEquals(anyOneWordContains(results, expectedString), true);
+        Assert.assertEquals(searchPage.anyOneWordContains(results, expectedString), true);
     }
     
 }

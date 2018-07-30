@@ -52,26 +52,7 @@ public class MarketTests extends TestBase {
 
         driver.navigate().refresh();
 
-        Assert.assertTrue(isSorted(marketPage.getListPrices()));
-    }
-
-    public boolean isSorted(List<Integer> prices) {
-        Boolean isSortedAsc = true;
-        Boolean isSortedDesc = true;
-
-        for(int i=1; i < prices.size() -1; i++){
-            if(prices.get(i-1) > prices.get(i)){
-                isSortedDesc = false;
-            }
-        }
-
-        for(int i=1; i < prices.size()-1; i++){
-            if(prices.get(i-1) < prices.get(i)){
-                isSortedAsc = false;
-            }
-        }
-
-        return isSortedAsc || isSortedDesc;
+        Assert.assertTrue(marketPage.isSorted(marketPage.getListPrices()));
     }
 
     @Test
