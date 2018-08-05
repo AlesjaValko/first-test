@@ -1,0 +1,30 @@
+{
+    "run": {
+        "default": "",
+        "items": [
+            {
+                "name": "secondproject",
+                "projectName": "secondproject",
+                "workingDirectory": "/home/revich2/Public/first-test",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    },
+    "debug": {
+        "default": "",
+        "items": [
+            {
+                "name": "secondproject",
+                "projectName": "secondproject",
+                "workingDirectory": "/home/revich2/Public/first-test",
+                "args": [],
+                "vmargs": [],
+                "env": {},
+                "preLaunchTask": ""
+            }
+        ]
+    }
+}
